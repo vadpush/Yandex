@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kegli", "kegli\kegli.vcxproj", "{F6829E01-0167-4833-B649-093E51BFE929}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6829E01-0167-4833-B649-093E51BFE929}.Debug|x64.ActiveCfg = Debug|x64
+		{F6829E01-0167-4833-B649-093E51BFE929}.Debug|x64.Build.0 = Debug|x64
+		{F6829E01-0167-4833-B649-093E51BFE929}.Debug|x86.ActiveCfg = Debug|Win32
+		{F6829E01-0167-4833-B649-093E51BFE929}.Debug|x86.Build.0 = Debug|Win32
+		{F6829E01-0167-4833-B649-093E51BFE929}.Release|x64.ActiveCfg = Release|x64
+		{F6829E01-0167-4833-B649-093E51BFE929}.Release|x64.Build.0 = Release|x64
+		{F6829E01-0167-4833-B649-093E51BFE929}.Release|x86.ActiveCfg = Release|Win32
+		{F6829E01-0167-4833-B649-093E51BFE929}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {248CCB8D-B387-432B-B071-A4B6697885C7}
+	EndGlobalSection
+EndGlobal
