@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\vadpu\onedrive\progc++\yandexcplus\functions\project5\project5\source.cpp(8): warning C4715: Input: значение возвращается не при всех путях выполнения
+  Project5.vcxproj -> C:\Users\vadpu\OneDrive\PROGC++\YandexCplus\functions\Project5\Debug\Project5.exe
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(331,5): error MSB3374: Не удалось задать время последнего доступа/последней записи для файла "Debug\Project5.tlog\Project5.lastbuildstate". Процесс не может получить доступ к файлу "C:\Users\vadpu\OneDrive\PROGC++\YandexCplus\functions\Project5\Project5\Debug\Project5.tlog\Project5.lastbuildstate", так как этот файл используется другим процессом.
