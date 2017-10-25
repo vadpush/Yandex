@@ -131,7 +131,7 @@ int main() {
 	if (R == -1) cout << 0;
 	else cout << R;*/
 
-	int n, m;
+	/*int n, m;
 	cin >> n >> m;
 	int a[100][100];
 	for (int i = 0; i < n; i++) {
@@ -144,6 +144,31 @@ int main() {
 		for (int j = 0; j < n; j++) {
 			b[i][j] = a[n -1- j][i];
 			cout << b[i][j] << " ";
+		}
+		cout << endl;
+	}*/
+
+	int n, m,i,j,sum=0,a[30][30];
+	cin >> n >> m;
+	for (i = 0; i < n; i++) {
+		if (i % 2 == 0) {
+			for (j = 0; j < m; j++) {
+				sum++;
+				a[i][j] = sum;
+			};
+		}
+		else
+		{
+			for (j = m - 1; j >= 0; j--) {
+				sum++;
+				a[i][j] = sum;
+			}
+		}
+	};
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < m; j++) {
+			cout << setw(4);
+			cout << a[i][j];
 		}
 		cout << endl;
 	}
