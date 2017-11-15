@@ -38,7 +38,7 @@ int main() {
 		}
 	}*/
 
-	int n;
+	/*int n;
 	string s;
 	cin >> n;
 	getline(cin, s);
@@ -61,7 +61,14 @@ int main() {
 				}
 			}
 		}
-	}
+	}*/
+
+	string s;
+	getline(cin, s);
+	int first = s.find_first_of("?!.");
+	cout << first;
+	int second =s.find_first_of("?!.", first + 1);
+	cout << s.substr(first+1, second - first-1);
 	system("pause");
 	return 0;
 }
