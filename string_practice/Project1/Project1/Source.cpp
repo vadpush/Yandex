@@ -8,13 +8,29 @@ int main() {
 	if (c >= '0' && c <= '9') cout << "yes";
 	else cout << "no";*/
 
-	char c;
+	/*char c;
 	cin >> c;
 	if (c >= 'A' && c <= 'Z') cout << c;
 	else {
 		if (c >= 'a' && c <= 'z') {
 			int al_num = c - 'a';
 			cout << (char) ('A' + al_num);
+		}
+		else {
+			cout << c;
+		}
+	}*/
+
+	char c;
+	cin >> c;
+	if (c >= 'A' && c <= 'Z') {
+		int al_num = c - 'A';
+		cout << (char) ('a'+al_num);
+	}
+	else {
+		if (c >= 'a' && c <= 'z') {
+			int al_num = c - 'a';
+			cout << (char)('A' + al_num);
 		}
 		else {
 			cout << c;
