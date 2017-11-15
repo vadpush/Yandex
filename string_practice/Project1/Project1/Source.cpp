@@ -45,7 +45,7 @@ int main() {
 	};
 	cout << prob + 1;*/
 
-	string s;
+	/*string s;
 	getline(cin, s);
 	int first = 0;
 	int num = 0;
@@ -54,7 +54,19 @@ int main() {
 		first = s.find_first_of(" ", first+1);
 	};
 	if (num == 0) num = 1;
-	cout << num;
+	cout << num;*/
+
+	string s;
+	getline(cin, s);
+	bool pal = true;
+	for (int i = 0; i < s.size()/2; i++) {
+		if (s[i] != s[s.size() - i - 1]) {
+			pal = false;
+			break;
+		}
+	}
+	if (pal) cout << "yes";
+	else cout << "no";
 	system("pause");
 	return 0;
 }
