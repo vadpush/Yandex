@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\vadpu\onedrive\progc++\yandexcplus\string\project1\project1\source.cpp(57): warning C4305: аргумент: усечение из "int" в "const char"
+c:\users\vadpu\onedrive\progc++\yandexcplus\string\project1\project1\source.cpp(57): warning C4309: аргумент: усечение константного значения
+  Project1.vcxproj -> C:\Users\vadpu\OneDrive\PROGC++\YandexCplus\string\Project1\Debug\Project1.exe
