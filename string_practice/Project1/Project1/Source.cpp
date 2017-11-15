@@ -43,7 +43,18 @@ int main() {
 	for (auto c : s) {
 		if (c == ' ') prob++;
 	};
-	cout << prob + 1;
+	cout << prob + 1;*/
+
+	string s;
+	getline(cin, s);
+	int first = 0;
+	int num = 0;
+	while (s.find_first_of(" ", first) != -1) {
+		num++;
+		first = s.find_first_of(" ", first+1);
+	};
+	if (num == 0) num = 1;
+	cout << num;
 	system("pause");
 	return 0;
 }
