@@ -21,7 +21,7 @@ int main() {
 		}
 	}*/
 
-	char c;
+	/*char c;
 	cin >> c;
 	if (c >= 'A' && c <= 'Z') {
 		int al_num = c - 'A';
@@ -35,8 +35,15 @@ int main() {
 		else {
 			cout << c;
 		}
-	}
+	}*/
 
+	/*string s;
+	int prob = 0;
+	getline(cin, s);
+	for (auto c : s) {
+		if (c == ' ') prob++;
+	};
+	cout << prob + 1;
 	system("pause");
 	return 0;
 }
