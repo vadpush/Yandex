@@ -25,6 +25,7 @@ int main() {
 		cin >> x;
 		dict.insert(x);
 		x = toSmall(x);
+		//словарь в нижнем регистре
 		dictSmall.insert(x);
 	};
 
@@ -36,11 +37,13 @@ int main() {
 	int k=0,mis=0;
 	while (p>0) {
 		string word = text.substr(0, text.find(' '));
-		if (dict.find(word) == dict.end() && dictSmall.find(toSmall(text)) != dictSmall.end()) {
-			k++;
+		if (dict.find(word) == dict.end() && dictSmall.find(toSmall(word)) != dictSmall.end()) {
+			//если слово без поставленного ударения(в нижнем регистре) есть в словаре без ударений(все слова в нижнем регистре), но слова с ударением нет в словаре с ударениеми, то ошибка
+			mis++;
 		}
 		else {
 			for (auto c : word) {
+				//проверяем количество ударений
 				if (c >= 'A' && c <= 'Z') {
 					k++;
 				}
@@ -48,7 +51,7 @@ int main() {
 			if (k != 1) mis++;
 			k = 0;
 		}
-		text = text.substr(word.size()+1, text.size() - 1);
+		text = text.substr(word.size()+1, text.size() - word.size()-1);
 		p = text.find(' ');
 	};
 	cout << mis << "\n";
